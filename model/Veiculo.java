@@ -1,13 +1,13 @@
 package br.com.fiapdelivery.model;
 
-public abstract class Veiculo {
-    
+public class Veiculo {
+
     private String placa;
     private double capacidade;
 
     public Veiculo(String placa, double capacidade) {
         this.placa = placa;
-        this.setCapacidade(capacidade); 
+        this.setCapacidade(capacidade);
     }
 
     public String getPlaca() {
@@ -22,7 +22,7 @@ public abstract class Veiculo {
         if (capacidade > 0) {
             this.capacidade = capacidade;
         } else {
-            System.out.println("Erro: A capacidade deve ser maior que zero! Ajustando para 0.");
+            System.out.println("Erro: a capacidade deve ser maior que zero.");
             this.capacidade = 0;
         }
     }
